@@ -5,9 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RappFinexx"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="152,115,0,0" VerticalAlignment="Top" Width="100"/>
-
-    </Grid>
+        Title="MainWindow" Height="335.02" Width="468.334">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FF4F7BEE"/>
+            <GradientStop Color="#FF4DBFCA" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Canvas HorizontalAlignment="Left" Height="315" Margin="10,10,0,-17" VerticalAlignment="Top" Width="448">
+        <Label x:Name="lblWelcome" Content="Welcome to RappFinexx" FontSize="36" HorizontalAlignment="Center" FontFamily="/Fonts/#Acme" FontWeight="Bold" Opacity="0.8" Canvas.Left="41">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="3" ShadowDepth="3" Direction="50"/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="lblWelcome_Copy" Content="Please log in!" FontSize="20" HorizontalAlignment="Center" FontFamily="/Fonts/#Acme" FontWeight="Bold" Opacity="0.8" Canvas.Left="166.1" Canvas.Top="55.6"/>
+        <TextBox Height="30" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="122" Width="249" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <Label Content="User Name" Canvas.Top="91" Width="249" Canvas.Left="104" FontSize="16"/>
+        <TextBox Height="30" TextWrapping="Wrap" Canvas.Left="104" Canvas.Top="188" Width="249" Cursor="Hand" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Label Content="Password" Canvas.Top="157" Width="249" Canvas.Left="104" FontSize="16"/>
+        <Button Content="Log In" Canvas.Left="104" Canvas.Top="223" Width="249" Height="37" FontSize="24" FontFamily="/Fonts/#Shadows Into Light"/>
+    </Canvas>
 </Window>
