@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="152,115,0,0" VerticalAlignment="Top" Width="100"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="131" Margin="541,175,0,0" Stroke="Black" VerticalAlignment="Top" Width="171"/>
+        <GridSplitter HorizontalAlignment="Left" Height="100" Margin="345,115,0,0" VerticalAlignment="Top" Width="196"/>
+
     </Grid>
 </Window>
