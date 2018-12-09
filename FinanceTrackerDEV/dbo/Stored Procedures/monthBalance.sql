@@ -13,7 +13,7 @@ BEGIN
 
 	set @beginning_balance = (
 		 Select sum(transaction_amount) + avg(acc.opening_balance)
-		 from tbltransaction TRA
+		 from tblTransaction TRA
 		 join tblAccount ACC on TRA.account_id = ACC.account_id
 		 where ACC.account_id = @account_id
 		 and transaction_date < @begin_date

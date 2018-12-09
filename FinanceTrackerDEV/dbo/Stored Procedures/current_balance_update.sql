@@ -13,7 +13,7 @@ begin
 
 
 	insert into tblAccount_Type_Balances
-	(ACCOUNT_TYPE, balance, month_loaded)
+	(account_type, balance, month_loaded)
 
 	Select id, sum(account_balance),cast(getdate() as date)
 	from
