@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{4e370b6a-44c3-4216-988f-3c76bde3a54c}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -68,7 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\AccountPaymentSummary.sql" />
-    <Build Include="dbo\Tables\BalanceSheet.sql" />
     <Build Include="dbo\Tables\CurrentDebt.sql" />
     <Build Include="dbo\Tables\tblAccount.sql" />
     <Build Include="dbo\Tables\tblAccount_Type.sql" />
@@ -105,7 +104,6 @@
     <Build Include="dbo\Stored Procedures\monthBalance.sql" />
     <Build Include="dbo\Stored Procedures\monthlyCreditCardSummaryPayments.sql" />
     <Build Include="dbo\Stored Procedures\monthlyCreditCardSummarySpending.sql" />
-    <Build Include="dbo\Stored Procedures\NetWorthAndAccountOverview.sql" />
     <Build Include="dbo\Stored Procedures\YearlyReturnOnInvestment.sql" />
     <Build Include="dbo\Stored Procedures\updateAccountLocation.sql" />
     <Build Include="dbo\Stored Procedures\setupTransfer.sql" />
